@@ -39,7 +39,7 @@ class BottomSheetPickerViewController: UIViewController {
         button.setTitle("Done", for: .normal)
         button.backgroundColor = UIColor(hex: 0x006FFD)
         button.setTitleColor(.white, for: .normal)
-        button.addTarget(BottomSheetPickerViewController.self, action: #selector(doneButtonTapped), for: .touchUpInside)
+        button.addTarget(self, action: #selector(doneButtonTapped), for: .touchUpInside)
         return button
     }()
     
